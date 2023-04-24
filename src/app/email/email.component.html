@@ -1,0 +1,67 @@
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <i class='bx bx-menu' id="menu_bar"></i>
+            <a href="#"><img src="../../assets/gmail-logo.png" alt=""></a>
+        </div>
+
+        <ul class="nav_bar">
+
+            <div class="button_compose">
+                <a href="#">
+                    <i class="bx bx-pencil"></i>
+                    <span class="nav_bar_name">Compose</span>
+                </a>
+            </div>
+            <div class="spacing"></div>
+            <li><a href="#" class="nav_bar_label"><i class="bx bxs-inbox"></i><span class="nav_bar_name">Inbox</span></a></li>
+            <li><a href="#" class="nav_bar_label"><i class="bx bx-star"></i><span class="nav_bar_name">Starred</span></a></li>
+            <li><a href="#" class="nav_bar_label"><i class="bx bx-time-five"></i><span class="nav_bar_name">Snoozed</span></a></li>
+            <li><a href="#" class="nav_bar_label"><i class="bx bx-label"></i><span class="nav_bar_name">Important</span></a></li>
+            <li><a href="#" class="nav_bar_label"><i class="bx bx-send"></i><span class="nav_bar_name">Sent</span></a></li>
+            <li><a href="#" class="nav_bar_label"><i class="bx bx-note bx-flip-vertical"></i><span class="nav_bar_name">Draft</span></a></li>
+            <li><a href="#" class="nav_bar_label submenu1"><i class="bx bxs-label"></i><span class="nav_bar_name">Categories</span><i class="bx bx-chevron-down"></i></a>
+                <ul class="submenu1_show submenu">
+                    <li><a href="#" class="category_subname_label"><i class="bx bx-group"></i><span class="category_submenu_name">Social</span></a></li>
+                    <li><a href="#" class="category_subname_label"><i class="bx bx-info-circle"></i><span class="category_submenu_name">Updates</span></a></li>
+                    <li><a href="#" class="category_subname_label"><i class="bx bx-conversation"></i><span class="category_submenu_name">Forums</span></a></li>
+                    <li><a href="#" class="category_subname_label"><i class="bx bx-purchase-tag-alt"></i><span class="category_submenu_name">Promotion</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav_bar_label submenu2"><span class="nav_bar_name">More</span><i class="bx bx-chevron-down"></i></a>
+                <ul class="submenu2_show submenu">
+                    <li><a href="#" class="submenu2_label"><i class="bx bx-chat"></i><span class="submenu2_name">Chats</span></a></li>
+                    <li><a href="#" class="submenu2_label"><i class="bx bx-hourglass"></i><span class="submenu2_name">scheduled</span></a></li>
+                    <li><a href="#" class="submenu2_label"><i class="bx bx-envelope"></i><span class="submenu2_name">All mail</span></a></li>
+                    <li><a href="#" class="submenu2_label"><i class="bx bx-info-circle"></i><span class="submenu2_name">Spam</span></a></li>
+                    <li><a href="#" class="submenu2_label"><i class="bx bx-trash"></i><span class="submenu2_name">Trash</span></a></li>
+                    <li><a href="#" class="submenu2_label"><i class="bx bx-cog"></i><span class="submenu2_name">Manage labels</span></a></li>
+                    <li><a href="#" class="submenu2_label"><i class="bx bx-plus"></i><span class="submenu2_name">Create new label</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('.submenu1').click(function(){
+            $('.submenu1_show').toggleClass('hidden');
+            $('.bx-chevron-down').toggleClass('rotate');
+        });
+
+        $('.submenu2').click(function(){
+            $('.submenu2_show').toggleClass('show');
+            $('.bx-chevron-down').toggleClass('rotate');
+        });
+
+        $('#menu_bar').click(function(){
+            $('.wrapper').toggleClass('closed');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  position: fixed;
+  height: 100%;
+  margin-left: 15px;
+  margin-top: 15px;
+  overflow: scroll;
+}
+.wrapper .logo {
+  display: flex;
+  align-items: center;
+}
+.wrapper .logo #menu_bar {
+  color: #5f6368;
+  font-size: 25px;
+}
+
+.logo i {
+  padding: 0 5px;
+}
+
+.wrapper .nav_bar {
+  margin-top: 15px;
+}
+
+.wrapper .nav_bar li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.wrapper .nav_bar li .nav_bar_label {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper ul li a i {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.submenu {
+  margin: 15px 25px;
+}
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.button_compose a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.button_compose i {
+  padding: 0 10px;
+  font-size: 20px;
+}
+.spacing {
+  height: 0;
+  margin: 15px;
+}
+
+.button_compose {
+  background-color: #c2e7ff;
+  height: 50px;
+  width: 140px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.button_compose:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.submenu1_show {
+  display: block;
+}
+.submenu2_show {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: inline-block !important;
+}
+.nav_bar li a .bx-chevron-down.rotate {
+  transform: rotate(-180deg);
+}
+
+.wrapper.closed .nav_bar_label {
+  width: 50px;
+}
+.wrapper.closed .submenu2_show {
+  display: none;
+}
+.wrapper.closed .submenu2_label {
+  display: none;
+}
+.wrapper.closed .button_compose {
+  width: 50px;
+}
+
+.wrapper.closed ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.wrapper.closed .nav_bar_name {
+  display: none;
+}
+.wrapper.closed .bx-chevron-down {
+  display: none;
+}
+.wrapper.closed img {
+  display: none;
+}
+.wrapper.closed .category_submenu_name {
+  display: none;
+}
+
+.nav_bar li a:hover {
+  background: #d3d3d3;
+}
+.nav_bar li a {
+  height: 30px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.nav_bar:hover .bx-chevron-down {
+  display: block;
+}
+.nav_bar:hover .button_compose {
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar:hover .button_compose a i {
+  padding: 0 10px;
+}
+.nav_bar:hover .nav_bar_name {
+  display: inline-block;
+}
+.nav_bar:hover .submenu {
+  margin: 15px 25px;
+}
+.nav_bar:hover .submenu li a i {
+  font-size: 20px;
+}
+.nav_bar:hover .nav_bar_label {
+  width: auto !important;
+}
+.nav_bar:hover .category_submenu_name {
+  display: block;
+}
+.nav_bar:hover .submenu2_label {
+  display: block;
+}
+.nav_bar:hover .submenu2_name {
+  display: inline-block;
+}
